@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "bootstraplearning", "bootstraplearning\bootstraplearning.pyproj", "{474F3117-53CC-468C-944D-6E5F00542E83}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FlaskLearning", "..\FlaskLearning\FlaskLearning\FlaskLearning.pyproj", "{304EACA9-D5EB-42C4-8A0C-7AA189B2E301}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{474F3117-53CC-468C-944D-6E5F00542E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{474F3117-53CC-468C-944D-6E5F00542E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304EACA9-D5EB-42C4-8A0C-7AA189B2E301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304EACA9-D5EB-42C4-8A0C-7AA189B2E301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC4DA04B-2A18-4737-A676-A6EC3D344579}
+	EndGlobalSection
+EndGlobal

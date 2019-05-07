@@ -1,0 +1,74 @@
+﻿<!-- extends base layout -->
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col border align-self-start">limbo</div>
+        <div class="col">michael</div>
+        <div class="col">hot</div>
+        <div class="col">more</div>
+    </div>
+</div>
+<h1>
+    Fancy world
+    <small class="text-muted">is here</small>
+</h1>
+<h1 class="display-1">
+    Fancy world
+</h1>
+<p class="lead">
+    Fancy world
+</p>
+<p>Test text</p>
+<p>Test <mark>text</mark></p>
+<p><del>Test text</del></p>
+<p><ins>Test text</ins></p>
+<p><small>Test text</small></p>
+<p><strong>Test text</strong></p>
+<p><em>Test text</em></p>
+
+<p><abbr title="Nipon hikikomony koka">NHK</abbr></p>
+<blockquote class="blockquote text-center">
+    <p>If you don't know where a saying from, just say limbo said.</p>
+    <footer class="blockquote-footer"><cite title="limbo">limbo</cite></footer>
+</blockquote>
+
+<ul class="list-unstyled text-right">
+    <li>michael hot more</li>
+    <li>limbo hot more</li>
+</ul>
+<ul>
+    <li>michaelhotmore</li>
+    <li>limbohotmore</li>
+</ul>
+
+<dl class="row bg-dark">
+    <dt class="col-3">limbot</dt>
+    <dd class="col-9">hot more</dd>
+    <dt class="col-6">michael</dt>
+    <dd class="col-6">
+        <p>wet more</p>
+        <p>hot more</p>
+    </dd>
+    <dt class="col-4">nest</dt>
+    <dd class="col-8">
+        <dl class="row">
+            <dt class="col-4">in the nest</dt>
+            <dd class="col-8">ijk</dd>
+        </dl>
+    </dd>
+</dl>
+
+<!-- code part -->
+For example,<code>&lt;section&gt;</code> should be wrapped as inline.
+<pre class="bg-dark"><code>
+    &lt;p&gt; Sample text here &lt;/p&gt;
+    anothor sample text
+</code></pre>
+
+<p><var>y</var> = <var>k</var><var>x</var> + <var>b</var></p>
+<p>y = kx + b</p>
+
+<p>To close a app, press <kbd>ctrl</kbd>+<kbd>F4</kbd> .</p>
+<samp>This text is meant to be treated as sample output from a computer program.</samp>
+{% endblock %}

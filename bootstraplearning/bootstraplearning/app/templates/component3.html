@@ -1,0 +1,173 @@
+﻿<!--extends base layout-->
+{% extends "base.html" %}
+{% block content %}
+<!--carousel-->
+<div class="row">
+    <div class="col-6 offset-3">
+        <div id="carouselA" class="carousel slide" data-ride="carousel">
+            <!--carousel-fade-->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselA" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselA" data-slide-to="1"></li>
+                <li data-target="#carouselA" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="1000">
+                    <img src="../static/img/fuhua.jpg" class="d-block w-100" alt="../static/img/fuhua.jpg" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First page</h5>
+                        <p>Slide one</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="../static/img/fuhua.jpg" class="d-block w-100" alt="../static/img/fuhua.jpg" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second page</h5>
+                        <p>Slide two</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/img/fuhua.jpg" class="d-block w-100" alt="../static/img/fuhua.jpg" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third page</h5>
+                        <p>Slide three</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselA" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselA" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--collapse-->
+<a class="btn btn-primary" href="#collapse1" data-toggle="collapse">
+    Link with href
+</a>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapse1">
+    Button with data-target
+</button>
+<div class="collapse" id="collapse1">
+    <div class="card card-body">
+        body
+    </div>
+</div>
+<p>
+    <a class="btn btn-primary" href="#collapse2" data-toggle="collapse">Toggle first element</a>
+    <button type="button" class="btn btn-primary" data-target="#collapse3" data-toggle="collapse">Toggle second element</button>
+    <button type="button" class="btn btn-primary" data-target=".muti-collapse" data-toggle="collapse">Toggle both elements</button>
+</p>
+<div class="row">
+    <div class="col">
+        <div class="collapse muti-collapse" id="collapse2">
+            <div class="card card-body border-dark">
+                First text
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="collapse muti-collapse" id="collapse3">
+            <div class="card card-body border-success">
+                Second text
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordion1">
+    <div class="card">
+        <div class="card-header" id="headingone">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-target="#collapse-one" data-toggle="collapse">Collapse item 1</button>
+            </h2>
+        </div>
+        <div class="collapse show" id="collapse-one" data-parent="#accordion1">
+            <div class="card-body">
+                limbo hot more
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingtwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-target="#collapse-two" data-toggle="collapse">Collapse item 2</button>
+            </h2>
+        </div>
+        <div class="collapse" id="collapse-two" data-parent="#accordion1">
+            <div class="card-body">
+                michael hot more
+            </div>
+        </div>
+    </div>
+</div>
+<!--dropdown-->
+<div class="dropdown"><!--dropup,dropleft,dropright-->
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">DropDown</button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">item1</a>
+        <a class="dropdown-item" href="#">item2</a>
+        <a class="dropdown-item" href="#">item3</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">another item</a>
+    </div>
+</div>
+<!-- Example split danger button -->
+<div class="btn-group">
+    <button type="button" class="btn btn-danger">Action</button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-lg-right">
+        <h6 class="dropdown-header">header</h6>
+        <span class="dropdown-item-text">text</span>
+        <a class="dropdown-item disabled" href="#" tabindex="-1">Another action</a>
+        <a class="dropdown-item active" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <button class="dropdown-item" type="button">another button</button>
+    </div>
+</div>
+<div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Sign up
+    </button>
+    <div class="dropdown-menu">
+        <form class="px-4 py-3">
+            <div class="form-group">
+                <label for="exampleDropdownFormEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleDropdownFormPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                    <label class="form-check-label" for="dropdownCheck">
+                        Remember me
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">New around here? Sign up</a>
+        <a class="dropdown-item" href="#">Forgot password?</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        example
+    </button>
+    <div class="dropdown-menu p-4 text-muted" style="max-width: 10rem;">
+        <p>
+            Some example text that's free-flowing within the dropdown menu.
+        </p>
+        <p class="mb-0">
+            And this is more example text.
+        </p>
+    </div>
+</div>
+{% endblock %}
