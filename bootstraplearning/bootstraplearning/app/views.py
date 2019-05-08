@@ -26,5 +26,9 @@ def component2():
 def component3():
     return render_template('component3.html')
 
+@app.route('/c4')
+def component4():
+    return render_template('component4.html')
+
 
 
