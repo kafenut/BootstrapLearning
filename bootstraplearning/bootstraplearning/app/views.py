@@ -30,5 +30,9 @@ def component3():
 def component4():
     return render_template('component4.html')
 
+@app.route('/c5')
+def component5():
+    return render_template('component5.html')
+
 
 
